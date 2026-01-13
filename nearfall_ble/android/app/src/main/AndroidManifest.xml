@@ -1,4 +1,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Bluetooth permissions -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    
+    <!-- Location permissions (required for BLE scanning on Android) -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    
+    <!-- Wake lock to keep app running in background -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    
+    <!-- Optional: Disable battery optimization for better background performance -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    
     <application
         android:label="nearfall_ble"
         android:name="${applicationName}"

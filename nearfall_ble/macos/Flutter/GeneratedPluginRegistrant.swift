@@ -5,6 +5,12 @@
 import FlutterMacOS
 import Foundation
 
+import package_info_plus
+import reactive_ble_mobile
+import wakelock_plus
 
 func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
+  FPPPackageInfoPlusPlugin.register(with: registry.registrar(forPlugin: "FPPPackageInfoPlusPlugin"))
+  ReactiveBlePlugin.register(with: registry.registrar(forPlugin: "ReactiveBlePlugin"))
+  WakelockPlusMacosPlugin.register(with: registry.registrar(forPlugin: "WakelockPlusMacosPlugin"))
 }

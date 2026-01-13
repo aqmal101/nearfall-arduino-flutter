@@ -1,0 +1,5 @@
+const String DEVICE_NAME = "ESP32-FallRisk";
+
+const String SERVICE_UUID = "12345678-1234-1234-1234-1234567890ab";
+
+const String CHARACTERISTIC_UUID = "abcd1234-5678-1234-5678-abcdef123456";
